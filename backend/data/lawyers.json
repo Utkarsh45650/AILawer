@@ -1,0 +1,26 @@
+{
+  "lawyer_1": {
+    "id": "lawyer_1",
+    "name": "Sarah Johnson",
+    "specialization": "Corporate Law",
+    "available_slots": [],
+    "is_online": true,
+    "created_at": "2025-09-21T16:42:35.139417"
+  },
+  "lawyer_2": {
+    "id": "lawyer_2",
+    "name": "Michael Chen",
+    "specialization": "Criminal Law",
+    "available_slots": [],
+    "is_online": false,
+    "created_at": "2025-09-21T16:42:35.139417"
+  },
+  "lawyer_3": {
+    "id": "lawyer_3",
+    "name": "Emily Rodriguez",
+    "specialization": "Family Law",
+    "available_slots": [],
+    "is_online": true,
+    "created_at": "2025-09-21T16:42:35.139417"
+  }
+}

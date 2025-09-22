@@ -1,0 +1,156 @@
+{
+  "project_name": "LegalAI WebApp",
+  "description": "A professional, subscription-based legal advice and recommendation web application with AI-powered chat, case study analysis, expert lawyer consultations, and visual mind maps of legal documents.",
+  "tech_stack": {
+    "frontend": {
+      "framework": "React",
+      "styling": ["TailwindCSS", "Framer Motion for animations"],
+      "features": [
+        "Beautiful and sleek login & signup pages with legal-themed UI",
+        "Subscription plans page shown on first login",
+        "Chat interface with step-by-step instructions and checkboxes",
+        "Government site links embedded in chat advice when relevant",
+        "Custom case study visualization (mind map/flow chart)",
+        "Expert advice booking with available lawyers and calendar slots",
+        "Dashboard with subscription management, chat history, and resume previous chat",
+        "Colored legal theme (law-suite inspired, professional look)"
+      ]
+    },
+    "backend": {
+      "language": "Python",
+      "framework": "FastAPI",
+      "models": {
+        "chat_advice": {
+          "model": "Llama 3.1",
+          "finetuning": "Planned for legal-specific data",
+          "features": [
+            "Step-by-step responses with checkboxes",
+            "Relevant government links in each step",
+            "Adaptive learning from user interactions"
+          ]
+        },
+        "custom_case_study": {
+          "model": "RAG model",
+          "location": "folder: final",
+          "tasks": [
+            "Extract text from uploaded PDFs",
+            "Summarize legal documents",
+            "Highlight important text",
+            "Generate mind map / flow chart visualization"
+          ]
+        },
+        "expert_advice": {
+          "lawyer_window": "Shows real-time availability of lawyers",
+          "booking": "Allow scheduling with free slots",
+          "limit": "Depends on subscription tier"
+        }
+      },
+      "data_storage": {
+        "type": "JSON file database (temporary)",
+        "tables": {
+          "users": [
+            "id",
+            "name",
+            "email",
+            "password_hash",
+            "subscription_tier",
+            "subscription_expiry",
+            "chat_history",
+            "case_study_history",
+            "expert_advice_bookings"
+          ],
+          "lawyers": [
+            "id",
+            "name",
+            "specialization",
+            "availability_slots",
+            "bookings"
+          ]
+        }
+      }
+    },
+    "subscription_system": {
+      "tiers": [
+        {
+          "name": "Basic",
+          "price": "Free",
+          "features": [
+            "Chat advice",
+            "5 custom case study uses per week"
+          ]
+        },
+        {
+          "name": "Standard",
+          "price": "Monthly/Yearly",
+          "features": [
+            "All Basic features",
+            "Unlimited custom case study uses"
+          ]
+        },
+        {
+          "name": "Premium",
+          "price": "Monthly/Yearly",
+          "features": [
+            "All Standard features",
+            "Expert advice (3 times per week)"
+          ]
+        },
+        {
+          "name": "Platinum",
+          "price": "Monthly/Yearly",
+          "features": [
+            "All Premium features",
+            "Unlimited expert advice sessions"
+          ]
+        }
+      ],
+      "enforcement": {
+        "chat_advice": "Available to all tiers",
+        "custom_case_study": {
+          "Basic": "5 per week",
+          "Standard": "Unlimited",
+          "Premium": "Unlimited",
+          "Platinum": "Unlimited"
+        },
+        "expert_advice": {
+          "Premium": "3 per week",
+          "Platinum": "Unlimited"
+        }
+      }
+    },
+    "core_features": {
+      "authentication": {
+        "login": "Email + password",
+        "signup": "New user registration",
+        "session_persistence": "JSON database stores progress"
+      },
+      "chat_advice": {
+        "new_or_continue_chat": "Option to start a new conversation or continue previous",
+        "history": "Stored in user account",
+        "checkbox_steps": "Each legal step shown with a checkbox",
+        "gov_links": "Insert authentic .gov links"
+      },
+      "custom_case_study": {
+        "file_upload": "PDF upload",
+        "rag_pipeline": "Check and use 'final' model for text extraction + summarization",
+        "mind_map": "Auto-generate mind maps/flow charts from legal docs"
+      },
+      "expert_advice": {
+        "availability": "Show lawyers who are online",
+        "booking": "Allow selecting time slots",
+        "video_call_integration": "Future scope"
+      }
+    },
+    "ui_ux": {
+      "theme": "Professional, law-suite inspired, sleek",
+      "colors": ["Navy Blue", "Gold", "White"],
+      "layout": "Minimal, clean, grid-based",
+      "animations": "Subtle transitions with Framer Motion"
+    },
+    "scalability": {
+      "future_database": "PostgreSQL or MongoDB",
+      "cloud_storage": "AWS S3 for documents",
+      "authentication": "OAuth 2.0 or JWT for scaling"
+    }
+  }
+}

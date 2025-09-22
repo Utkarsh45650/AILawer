@@ -1,0 +1,38 @@
+{
+  "new-user-001": {
+    "id": "new-user-001",
+    "name": "New User",
+    "email": "newuser@example.com",
+    "password_hash": "$2b$12$vJQhECvEqpukpjw11rcKOuPFOJa011F827oDrRJ4G5dx0jN9N3P0.",
+    "created_at": "2025-09-21T15:00:00",
+    "subscription_tier": "Basic",
+    "subscription_expiry": null,
+    "chat_history": [],
+    "case_study_history": [],
+    "expert_advice_bookings": []
+  },
+  "2c7122bc-3d77-49fa-b243-f2a4df75768d": {
+    "name": "Utkarsh",
+    "email": "utkarsh@gmail.com",
+    "password_hash": "$2b$12$wMle3UlxkebKk/DarjOWLuP6.QbZ0umT8hjsRZNs6cdfdzdCvuNAG",
+    "id": "2c7122bc-3d77-49fa-b243-f2a4df75768d",
+    "created_at": "2025-09-21T21:46:07.121710",
+    "subscription_tier": "Basic",
+    "subscription_expiry": null,
+    "chat_history": [],
+    "case_study_history": [],
+    "expert_advice_bookings": []
+  },
+  "0ec5178d-653c-4280-be88-fad3dfa896a3": {
+    "name": "Utkarsh",
+    "email": "utkarshagrawal@gmail.com",
+    "password_hash": "$2b$12$lmDJF6h3CpTh71P32vbrqu/GpSlXkxnjOJC6fMzySA9mrq16ZQIoi",
+    "id": "0ec5178d-653c-4280-be88-fad3dfa896a3",
+    "created_at": "2025-09-21T23:45:42.146334",
+    "subscription_tier": "Basic",
+    "subscription_expiry": null,
+    "chat_history": [],
+    "case_study_history": [],
+    "expert_advice_bookings": []
+  }
+}

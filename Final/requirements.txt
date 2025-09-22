@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+langchain
+langchain-community
+langchain-pinecone
+langchain-google-genai
+langchain-huggingface
+python-dotenv
+pinecone-client
+sentence-transformers
