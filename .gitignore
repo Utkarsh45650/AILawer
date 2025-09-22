@@ -37,14 +37,19 @@ Final/venv/
 # Environment variables
 .env
 .env.*
+!.env.example
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
 backend/.env*
+!backend/.env.example
 Final/.env*
+!Final/.env.example
 */.*env*
+!*/.env.example
 */.env*
+!*/.env.example
 
 # Configuration files that may contain sensitive data
 config.json
