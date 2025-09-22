@@ -268,5 +268,4 @@ For issues and questions:
 
 ---
 
-**Built with ❤️ for the legal technology community**#   A I L a w e r  
- 
+**Built with ❤️ for the legal technology community**#
